@@ -325,9 +325,11 @@ class Connectivity:
 
     @_asnumpy
     def coherence_magnitude(self):
-        """The magnitude of the complex coherency.
-
-        Note that this is not the magnitude squared coherence.
+        """The magnitude squared of the complex coherency.
+        
+        Note that the squared modulus of coherency (complex quantity) 
+        is the magnitude-squared coherence (i.e., the real component of coherency). 
+        This value should bounded by 0 and 1.
 
         Returns
         -------
